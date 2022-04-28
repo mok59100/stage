@@ -1,0 +1,49 @@
+﻿<Window x:Class="EASL.Accueil"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:EASL"
+        mc:Ignorable="d"
+        Title="Accueil" Height="450" Width="950">
+    <Grid Background="#FF292424">
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="352*"/>
+            <ColumnDefinition Width="207*"/>
+            <ColumnDefinition Width="391*"/>
+        </Grid.ColumnDefinitions>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="107*"/>
+            <RowDefinition Height="215*"/>
+            <RowDefinition Height="33*"/>
+            <RowDefinition Height="49*"/>
+            <RowDefinition Height="30*"/>
+        </Grid.RowDefinitions>
+        <Grid Grid.ColumnSpan="3" Margin="0,107,0,0" Grid.RowSpan="2">
+            <Grid.RowDefinitions>
+                <RowDefinition Height="1*"/>
+                <RowDefinition Height="0.1*"/>
+                <RowDefinition Height="1*"/>
+            </Grid.RowDefinitions>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="0.5*"/>
+                <ColumnDefinition Width="1*"/>
+                <ColumnDefinition Width="0.1*"/>
+                <ColumnDefinition Width="1*"/>
+                <ColumnDefinition Width="0.1*"/>
+                <ColumnDefinition Width="1*"/>
+                <ColumnDefinition Width="0.1*"/>
+                <ColumnDefinition Width="1*"/>
+                <ColumnDefinition Width="0.5*"/>
+            </Grid.ColumnDefinitions>
+            <Button x:Name="btn_Actualites" Content="Gestion des Actualites" Grid.Column="1" Click="btnActualites_Click" Background="#FFE86E34" FontWeight="Bold"/>
+            <Button x:Name="btn_Adhesions" Content="Gestion des Adhesions" Grid.Column="3" Click="btnAdhesions_Click" Background="#FFE86E34" FontWeight="Bold"/>
+            <Button x:Name="btn_Cotisations" Content="Gestion des Cotisations" Grid.Column="5" Click="btnCotisations_Click" Background="#FFE86E34" FontWeight="Bold"/>
+            <Button x:Name="btn_Dons" Content="Gestion des Dons" Grid.Column="7" Click="btnDons_Click" Background="#FFE86E34" FontWeight="Bold"/>
+            <Button x:Name="btn_Utilisateurs" Content="Gestion des Utilisateurs" Grid.Column="1" Grid.Row="3" Click="btnUtilisateurs_Click" Background="#FFE86E34" FontWeight="Bold"/>
+
+
+        </Grid>
+        <Button x:Name="btn_Deconnexion" Content="Déconnexion" Grid.Column="1" Grid.Row="3" Click="Deconnexion" Background="#FF4FF04F" FontWeight="Bold"/>
+    </Grid>
+</Window>

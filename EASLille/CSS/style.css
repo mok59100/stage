@@ -1,0 +1,280 @@
+/* ***********navbar****************** */
+
+img {
+
+    width: 50%;
+}
+
+body {
+    /* background-image: url(../IMG/Communaute-Afrique-Est.png); */
+    background-image: url(../IMG/fondecran.jpg);
+    background-size: cover;
+    /*   
+     width:690px; 
+    right : 100%;  */
+    opacity: 1.2;
+
+
+}
+
+/* main{
+    background-image: url(../IMG/fondecran.jpg);
+    background-size:cover;
+} */
+
+.titre {
+    /* font-family: 'Alfa Slab One', cursive; */
+    font-family: 'Staatliches', cursive;
+    font-size: 3em;
+    color: green;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.nav {
+    list-style-type: none;
+    width: 100%;
+    right: 0;
+    height: 100%;
+    z-index: 1;
+    flex-direction: row;
+    padding: 30px;
+
+}
+
+/* Full height */
+.card-group {
+    flex-direction: row;
+    width: 100%;
+    height: 100%;
+
+}
+
+.card-body {
+    font-family: 'Alfa Slab One', cursive;
+}
+
+.card {
+    flex-direction: column;
+    position: center;
+    width: 50%;
+    right: 10em;
+    height: 100%;
+}
+
+
+nav div:active {
+    box-shadow: -2px -2px 3px var(--linkColor);
+    /* display:none; */
+}
+
+footer {
+    position: fixed;
+    bottom: 0;
+    /* background-color: black; */
+    z-index: 50;
+    position: center;
+    width: 100%;
+
+}
+
+.demi {
+    position: center
+}
+
+.menunav {
+
+    /* position: absolute; */
+    flex-direction: row;
+    height: 10em;
+
+
+
+}
+
+.center {
+    font-family: 'Alfa Slab One', cursive;
+    color: #008000;
+}
+
+
+.colonne center {
+    position: fixed;
+
+}
+
+.border {
+    border: 2px solid black;
+    padding: 1em;
+    background-color: #ffffff;
+    box-shadow: 4px 4px 10px black;
+}
+
+.background {
+    background-color: black;
+    position: center;
+
+
+
+    /***********connexion***************/
+
+
+}
+
+.border {
+    border: solid var(--linkColor) 1px;
+}
+
+.borderRadius {
+    border-radius: 5vh;
+}
+
+#iconCo {
+    flex: none;
+    border-radius: 100%;
+    position: absolute;
+    top: 0;
+    height: min(20vh, 20vw);
+    width: min(20vh, 20vw);
+    transform: translateY(-50%);
+    background-color: var(--bgc2);
+    overflow: hidden;
+}
+
+#teteIconCo {
+    flex: none;
+    border-radius: 100%;
+    position: absolute;
+    top: min(2vh, 2vw);
+    height: min(10vh, 10vw);
+    width: min(10vh, 10vw);
+    background-color: var(--bgc1);
+}
+
+#corpsIconCo {
+    flex: none;
+    border-radius: 100%;
+    position: absolute;
+    top: min(12vh, 12vw);
+    height: min(20vh, 20vw);
+    width: min(20vh, 20vw);
+    background-color: var(--bgc1);
+
+
+}
+
+
+/* ******************************* */
+/* nous contacter */
+
+.contactez-nous {
+
+    width: 600px;
+    border: 1px solid;
+    border-radius: 8px;
+    padding: 0 50px 0 50px;
+    background: white;
+    position: center;
+    flex-direction: column;
+    margin: 100px;
+}
+
+.NousContacter {
+
+    position: center;
+    /* flex-direction: column; */
+}
+
+/* .contactez-nous > h1 {
+        font-weight: 500;
+        }
+        
+        .contactez-nous > p {
+        font-weight: 500;
+        }
+         */
+form div {
+    /* width: 100%;   */
+    display: flex;
+    flex-direction: column;
+}
+
+
+
+
+
+form div>label {
+    margin-bottom: 7px;
+    /* font-weight: 500; */
+}
+
+form div>input,
+form div>select,
+form div>textarea {
+    background: #edecec;
+    /* border: none; */
+    border-radius: 5px;
+    font-size: 16px;
+    /* font-weight: 500; */
+    /* font-family: Montserrat, "sans-serif"; */
+    box-shadow: 0px 2px 2px 0px rgba(0, 0, 0, 0.25);
+}
+
+form div>input,
+form div>select {
+    /* height: 50px; */
+    padding-left: 10px;
+}
+
+form div>select {
+    appearance: none;
+    background-size: 15px;
+
+    background-position: right 10px top 50%;
+    background-repeat: no-repeat;
+}
+
+/* **************qui sommes nous************** */
+
+/* .contenant {
+          position: relative;
+          text-align: center;
+         
+        } */
+
+.texte {
+    color: rgb(20, 20, 20);
+   
+    top: 50%;
+    left: 50%;
+    /* transform: translate(-50%, -50%); */
+    width: 1100px;
+    /* On a indiqué une largeur */
+    margin: auto;
+    /* On peut donc demander à ce que le bloc soit centré avec auto */
+    background-color: #f5f5f5;
+    /* on choisie la couleur */
+    border: 10px solid rgb(2, 136, 7);
+    border-radius: 15px / 15px;
+    /* on ajuste pour avoir des coins arondis*/
+    text-align: justify;
+    padding: 40px;
+   
+}
+
+
+/* video {
+    width: 30%;
+    margin-top: 10vh;px
+} */
+/* .texte{
+   background-color: rgb(252, 225, 230);
+    position: center;
+    flex-direction: column;
+    border-radius: 10px;
+    background-size: cover;
+    display: block;
+    flex: 1;
+    
+} */

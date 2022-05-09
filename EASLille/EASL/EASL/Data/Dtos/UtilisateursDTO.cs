@@ -14,6 +14,7 @@ namespace EASL.Data.Dtos
         public string Prenom { get; set; }
         public string AdresseMail { get; set; }
         public string MotDePasse { get; set; }
+        public int IdRole { get; set; }
 
     }
 
@@ -29,6 +30,8 @@ namespace EASL.Data.Dtos
         public int? TelephoneUtilisateur { get; set; }
         public string SituationProfessionnelle { get; set; }
         public bool? Active { get; set; }
+        public int IdRole { get; set; }
+
         public virtual Role IdRoleNavigation { get; set; }
         public virtual ICollection<Adhesion> Adhesions { get; set; }
         public virtual ICollection<Cotisation> Cotisations { get; set; }

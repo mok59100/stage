@@ -18,7 +18,7 @@ class Adhesions
 		return $this->_IdAdhesion;
 	}
 
-	public function setIdAdhesion(int $IdAdhesion)
+	public function setIdAdhesion(?int $IdAdhesion)
 	{
 		$this->_IdAdhesion=$IdAdhesion;
 	}

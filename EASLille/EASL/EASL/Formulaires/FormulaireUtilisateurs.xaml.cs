@@ -68,6 +68,7 @@ namespace EASL.Formulaires
                     txbPrenom.Text = Utilisateur.Prenom;
                     txbAdresseMail.Text = Utilisateur.AdresseMail;
                     txbMotDePasse.Text = Utilisateur.MotDePasse;
+                    cbIdRole.SelectedValue = Utilisateur.IdRole;
 
                     break;
                 case "Supprimer":
@@ -79,6 +80,8 @@ namespace EASL.Formulaires
                     txbAdresseMail.IsEnabled = false;
                     txbMotDePasse.Text = Utilisateur.MotDePasse;
                     txbMotDePasse.IsEnabled = false;
+                    cbIdRole.SelectedValue = Utilisateur.IdRole;
+                    cbIdRole.IsEnabled = false;
                     break;
                 default:
                     break;
@@ -94,6 +97,7 @@ namespace EASL.Formulaires
                 Prenom = txbPrenom.Text,
                 AdresseMail = txbAdresseMail.Text,
                 MotDePasse = txbMotDePasse.Text,
+                IdRole = (int)cbIdRole.SelectedValue,
 
             };
         
@@ -113,13 +117,13 @@ namespace EASL.Formulaires
         {
             this.Close();
         }
-        private void txbNumber_TextChanged(object sender, TextChangedEventArgs e)
-        {
-            if (!Int32.TryParse(((TextBox)sender).Text, out Int32 result))
-            {
-                ((TextBox)sender).Text = "";
-                MessageBox.Show("Cette valeur doit être un entier", "Erreur de saisie", MessageBoxButton.OK, MessageBoxImage.Information);
-            }
-        }
+        //private void txbNumber_TextChanged(object sender, TextChangedEventArgs e)
+        //{
+        //    if (!Int32.TryParse(((TextBox)sender).Text, out Int32 result))
+        //    {
+        //        ((TextBox)sender).Text = "";
+        //        MessageBox.Show("Cette valeur doit être un entier", "Erreur de saisie", MessageBoxButton.OK, MessageBoxImage.Information);
+        //    }
+        //}
     }
 }

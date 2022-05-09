@@ -23,16 +23,7 @@ echo '<div class="caseForm titreForm col-span-form">Formulaire Messages</div>';
 echo '<div class="noDisplay"><input type="hidden" value="' . $elm->getIdMessage() . '" name=IdMessage></div>';
 
 
-echo '<label for=Dates class="caseForm labelForm">' . texte("Dates") . '</label>';
-echo '<div class="caseForm donneeForm"><input type="text" ' . $disabled . 'value="' . $elm->getDates() . '" name=Dates pattern="' . $regex["*"] . '"></div>';
-echo '<div class="caseForm infoForm"><i class="fas fa-question-circle"></i></div>';
-echo '<div class="caseForm checkForm"><i class="fas fa-check-circle"></i></div>';
 
-
-echo '<label for=Heure class="caseForm labelForm">' . texte("Heure") . '</label>';
-echo '<div class="caseForm donneeForm"><input type="text" ' . $disabled . 'value="' . $elm->getHeure() . '" name=Heure pattern="' . $regex["*"] . '"></div>';
-echo '<div class="caseForm infoForm"><i class="fas fa-question-circle"></i></div>';
-echo '<div class="caseForm checkForm"><i class="fas fa-check-circle"></i></div>';
 
 
 
@@ -41,11 +32,15 @@ echo '<div class="caseForm donneeForm"><input type="text" ' . $disabled . 'value
 echo '<div class="caseForm infoForm"><i class="fas fa-question-circle"></i></div>';
 echo '<div class="caseForm checkForm"><i class="fas fa-check-circle"></i></div>';
 
-echo '<label for=Message class="caseForm labelForm">' . texte("Message") . '</label>';
-echo '<div class="caseForm donneeForm"><input type="text" ' . $disabled . 'value="' . $elm->getMessage() . '" name=Message pattern="' . $regex["*"] . '"></div>';
+echo '<label for=Contenu class="caseForm labelForm">' . texte("Contenu") . '</label>';
+echo '<div class="caseForm donneeForm"><input type="text" ' . $disabled . 'value="' . $elm->getContenu() . '" name=Contenu pattern="' . $regex["*"] . '"></div>';
 echo '<div class="caseForm infoForm"><i class="fas fa-question-circle"></i></div>';
 echo '<div class="caseForm checkForm"><i class="fas fa-check-circle"></i></div>';
 
+echo '<label for=Create_at class="caseForm labelForm">' . texte("Create_at") . '</label>';
+echo '<div class="caseForm donneeForm"><input type="text" ' . $disabled . 'value="' . $elm->getCreate_at() . '" name=Create_at pattern="' . $regex["*"] . '"></div>';
+echo '<div class="caseForm infoForm"><i class="fas fa-question-circle"></i></div>';
+echo '<div class="caseForm checkForm"><i class="fas fa-check-circle"></i></div>';
 echo '<div class="caseForm col-span-form">
 	<div></div>
 	<div><a href="index.php?page=ListeMessages"><button type="button"><i class="fas fa-sign-out-alt fa-rotate-180"></i></button></a></div>

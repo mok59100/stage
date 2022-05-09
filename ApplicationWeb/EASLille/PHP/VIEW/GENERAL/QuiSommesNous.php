@@ -99,8 +99,8 @@
   <div></div>
   <fieldset>
     <legend> NOTRE ETHIQUE </legend>
-    <div class="beautiful"><br> <br />
-      <br />
+    <div class="beautiful"><br>
+   
       – Travail<br>
 
       Nous réalisons nos ambitions par le travail, à travers lui nous façonnons notre environnement en l’imprimant notre idéal.<br> C’est un levier important par lequel nos chances se multiplient et nos rêves se concrétisent.<br> Nous œuvrons permanemment pour cultiver l’amour du travail bien accompli.<br>

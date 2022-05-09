@@ -32,8 +32,9 @@ $routes = [
 	"NousContacter" => ["PHP/VIEW/GENERAL/", "NousContacter", "Nous Contacter", 0, false],
 	"DeposezVotreCv" => ["PHP/VIEW/GENERAL/", "DeposezVotreCv", "Deposez votre cv", 0, false],
 	"QuiSommesNous" => ["PHP/VIEW/GENERAL/", "QuiSommesNous", "Qui sommes nous", 0, false],
-	"Afficher" => ["PHP/VIEW/GENERAL/", "Afficher", "Afficher", 1, false],
-	"Recuperer" => ["PHP/VIEW/GENERAL/", "Recuperer", "Recuperer", 1, false],
+	"Handler" => ["PHP/VIEW/GENERAL/", "Handler", "Handler", 0, false],
+	"Tchat" => ["PHP/VIEW/GENERAL/", "Tchat", "Tchat", 0, false],
+	// "Recuperer" => ["PHP/VIEW/GENERAL/", "Recuperer", "Recuperer", 1, false],
 
 	// "index"=>["PHP/VIEW/GENERAL/","index","index",0,false],
 

@@ -20,10 +20,10 @@ echo '<div class="caseListe grid-columns-span-7">
 
 
 
-echo '<div class="caseListe labelListe">Dates</div>';
-echo '<div class="caseListe labelListe">Heure</div>';
+
 echo '<div class="caseListe labelListe">Auteur</div>';
-echo '<div class="caseListe labelListe">Message</div>';
+echo '<div class="caseListe labelListe">Contenu</div>';
+echo '<div class="caseListe labelListe">Create_at</div>';
 
 //Remplissage de div vide pour la structure de la grid
 echo '<div class="caseListe"></div>';
@@ -35,10 +35,10 @@ foreach($objets as $unObjet)
 {
 
 
-echo '<div class="caseListe donneeListe">'.$unObjet->getDates().'</div>';
-echo '<div class="caseListe donneeListe">'.$unObjet->getHeure().'</div>';
+
 echo '<div class="caseListe donneeListe">'.$unObjet->getAuteur().'</div>';
-echo '<div class="caseListe donneeListe">'.$unObjet->getMessage().'</div>';
+echo '<div class="caseListe donneeListe">'.$unObjet->getContenu().'</div>';
+echo '<div class="caseListe donneeListe">'.$unObjet->getCreate_at().'</div>';
 echo '<div class="caseListe"> <a href="index.php?page=FormMessages&mode=Afficher&id='.$unObjet->getIdMessage().'"><i class="fas fa-file-contract"></i></a></div>';
                                                     
 echo '<div class="caseListe"> <a href="index.php?page=FormMessages&mode=Modifier&id='.$unObjet->getIdMessage().'"><i class="fas fa-pen"></i></a></div>';

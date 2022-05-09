@@ -46,6 +46,7 @@
                 <DataGridTextColumn  Header="Prenom" Binding="{Binding Prenom}" />
                 <DataGridTextColumn  Header="AdresseMail" Binding="{Binding AdresseMail }" />
                 <DataGridTextColumn  Header="MotDePasse" Binding="{Binding MotDePasse }" />
+                <DataGridTextColumn  Header="IdRole" Binding="{Binding IdRole }" />
 
 
 

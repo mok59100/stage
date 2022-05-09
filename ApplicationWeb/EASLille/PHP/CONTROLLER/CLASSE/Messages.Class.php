@@ -6,11 +6,10 @@ class Messages
 	/*****************Attributs***************** */
 
 	private $_IdMessage;
-	private $_Dates;
-	private $_Heure;
 	private $_Auteur;
-	private $_Message;
-	private static $_attributes = ["IdMessage", "Dates", "Heure", "Auteur", "Message"];
+	private $_Contenu;
+	private $_Create_at;
+	private static $_attributes = ["IdMessage", "Auteur", "Contenu", "Create_at"];
 	/***************** Accesseurs ***************** */
 
 
@@ -23,28 +22,6 @@ class Messages
 	{
 		$this->_IdMessage = $IdMessage;
 	}
-
-	public function getDates()
-	{
-		return $this->_Dates;
-	}
-
-	public function setDates(?string $Dates)
-	{
-
-		// $this->_Dates = is_null($Dates) ? null : DateTime::createFromFormat("Y-n-j", $Dates);
-		$this->_Dates = $Dates;
-	}
-	public function getHeure()
-	{
-		return $this->_Heure;
-	}
-
-	public function setHeure(?string $Heure)
-	{
-		// $this->_Heure = is_null($Heure) ? null : DateTime::createFromFormat(" h:i:s", $Heure);
-		$this->_Heure = $Heure;
-	}
 	public function getAuteur()
 	{
 		return $this->_Auteur;
@@ -55,15 +32,29 @@ class Messages
 		$this->_Auteur = $Auteur;
 	}
 
-	public function getMessage()
+	public function getContenu()
 	{
-		return $this->_Message;
+		return $this->_Contenu;
 	}
 
-	public function setMessage(?string $Message)
+	public function setContenu(?string $Contenu)
 	{
-		$this->_Message = $Message;
+		$this->_Contenu = $Contenu;
 	}
+
+	public function getCreate_at()
+	{
+		return $this->_Create_at;
+	}
+
+	public function setCreate_at($Create_at)
+	{
+		$this->_Create_at = $Create_at;
+	}
+	
+
+
+
 
 	public static function getAttributes()
 	{
@@ -99,6 +90,8 @@ class Messages
 	 */
 	public function toString()
 	{
-		return "IdMessage : " . $this->getIdMessage() .  "Dates : " . $this->getDates() . "Heure : " . $this->getHeure() . "Auteur : " . $this->getAuteur() .  "Message : " . $this->getMessage() . "\n";
+		return "IdMessage : " . $this->getIdMessage() .  "Dates : "  . "Auteur : " . $this->getAuteur() .  "Contenu : " . $this->getContenu() . "Create_at : " . $this->getCreate_at() . "\n";
 	}
+
+	
 }

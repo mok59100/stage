@@ -15,36 +15,38 @@
             <ColumnDefinition Width="1*"/>
         </Grid.ColumnDefinitions>
         <Grid.RowDefinitions>
-            <RowDefinition Height="1*"/>
-            <RowDefinition Height="2*"/>
-            <RowDefinition Height="1*"/>
-            <RowDefinition Height="2*"/>
-            <RowDefinition Height="1*"/>
-            <RowDefinition Height="2*"/>
-            <RowDefinition Height="1*"/>
-            <RowDefinition Height="2*"/>
-            <RowDefinition Height="1*"/>
-            <RowDefinition Height="2*"/>
-            <RowDefinition Height="2*"/>
-            <RowDefinition Height="2*"/>
-            <RowDefinition Height="1*"/>
+            <RowDefinition Height="0.5*"/>
+            <RowDefinition Height="1.5*"/>
+            <RowDefinition Height="0.5*"/>
+            <RowDefinition Height="1.5*"/>
+            <RowDefinition Height="0.5*"/>
+            <RowDefinition Height="1.5*"/>
+            <RowDefinition Height="0.5*"/>
+            <RowDefinition Height="1.5*"/>
+            <RowDefinition Height="0.5*"/>
+            <RowDefinition Height="1.5*"/>
+            <RowDefinition Height="0.5*"/>
+            <RowDefinition Height="1.5*"/>
+            <RowDefinition Height="0.5*"/>
+            <RowDefinition Height="1.5*"/>
         </Grid.RowDefinitions>
 
         <Label x:Name="labTitreFormulaire" Content="titre" Grid.Row="1" HorizontalContentAlignment="Center" Grid.Column="1" FontWeight="Bold" FontSize="16" Grid.ColumnSpan="3" Background="#FFFBF5F5"/>
 
         <Label Content="Nom" Grid.Row="3" HorizontalContentAlignment="Center" Grid.Column="1" FontWeight="Bold" Background="#FFFBF5F5"  />
-        <TextBox x:Name="txbNom" Grid.Row="3" Text="" HorizontalContentAlignment="Center" Grid.Column="3" TextChanged="txbNumber_TextChanged"/>
+        <TextBox x:Name="txbNom" Grid.Row="3" Text="" HorizontalContentAlignment="Center" Grid.Column="3" />
 
         <Label Content="Prenom" Grid.Row="5" HorizontalContentAlignment="Center" Grid.Column="1" FontWeight="Bold" Background="#FFFBF5F5" />
-        <TextBox x:Name="txbPrenom" Grid.Row="5" Text="" HorizontalContentAlignment="Center" Grid.Column="3" TextChanged="txbNumber_TextChanged"/>
+        <TextBox x:Name="txbPrenom" Grid.Row="5" Text="" HorizontalContentAlignment="Center" Grid.Column="3" />
 
         <Label Content="AdresseMail" Grid.Row="7" HorizontalContentAlignment="Center" Grid.Column="1" FontWeight="Bold" Background="#FFFBF5F5"  />
-        <TextBox x:Name="txbAdresseMail" Grid.Row="7" Text="" HorizontalContentAlignment="Center" Grid.Column="3" TextChanged="txbNumber_TextChanged"/>
+        <TextBox x:Name="txbAdresseMail" Grid.Row="7" Text="" HorizontalContentAlignment="Center" Grid.Column="3" />
 
         <Label Content="MotDePasse" Grid.Row="9" HorizontalContentAlignment="Center" Grid.Column="1" FontWeight="Bold" Background="#FFFBF5F5"  />
-        <TextBox x:Name="txbMotDePasse" Grid.Row="9" Text="" HorizontalContentAlignment="Center" Grid.Column="3" TextChanged="txbNumber_TextChanged"/>
-        
+        <TextBox x:Name="txbMotDePasse" Grid.Row="9" Text="" HorizontalContentAlignment="Center" Grid.Column="3" />
 
+        <Label Content="IdRole" Grid.Row="11" HorizontalContentAlignment="Center" Grid.Column="1" FontWeight="Bold" Background="#FFFBF5F5"  />
+        <ComboBox x:Name="cbIdRole" Grid.Row="11" Text="" HorizontalContentAlignment="Center" Grid.Column="3" />
 
         <Grid Grid.Row="11" Grid.Column="1" Grid.ColumnSpan="3">
 
@@ -55,8 +57,8 @@
                 <ColumnDefinition Width="3*"/>
                 <ColumnDefinition Width="2*"/>
             </Grid.ColumnDefinitions>
-            <Button x:Name="btn_Annuler" Content="Annuler" Grid.Column="1"  Grid.Row="1"  Click="Retour" Background="#FFE86E34" FontWeight="Bold" />
-            <Button x:Name="btn_Valider" Content="Valider" Grid.Column="3" Grid.Row="1" Background="#FF4FF04F" FontWeight="Bold"  />
+            <Button x:Name="btn_Annuler" Grid.Column="1" Content="Annuler" Grid.ColumnSpan="2"  Grid.Row="1"  Click="Retour" Background="#FFE86E34" FontWeight="Bold" Margin="6,61,100,-61" />
+            <Button x:Name="btn_Valider" Grid.Column="2" Content="Valider" Grid.ColumnSpan="2" Grid.Row="1" Background="#FF4FF04F" FontWeight="Bold" Margin="85,61,21,-61"  />
         </Grid>
     </Grid>
 </Window>

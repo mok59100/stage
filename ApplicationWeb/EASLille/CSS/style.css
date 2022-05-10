@@ -194,13 +194,17 @@ footer {
         font-weight: 500;
         }
          */
-form div {
-    /* width: 100%;   */
+
+         /* ************* */
+form {
+     width: 100%;   
     display: flex;
     flex-direction: column;
 }
 
-
+.esp{
+    flex-direction: column;
+}
 
 
 
@@ -234,7 +238,14 @@ form div>select {
     background-position: right 10px top 50%;
     background-repeat: no-repeat;
 }
-
+#fichier{
+    width: 100px;
+    height:20px;
+    padding-top: 10px;
+    padding-bottom: 20px;
+    padding-left: 0px;
+    padding-right: 100vh;
+}
 /* **************qui sommes nous************** */
 
 /* .contenant {

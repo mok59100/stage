@@ -22,17 +22,18 @@ echo '<div class="caseForm titreForm col-span-form">Formulaire Videos</div>';
 	echo '<div class="noDisplay"><input type="hidden" value="'.$elm->getIdVideo().'" name=IdVideo></div>';
 	
 echo '<label for=Description class="caseForm labelForm">'.texte("Description").'</label>';
-echo '<div class="caseForm donneeForm"><input type="text" '.$disabled .'value="'.$elm->getDescription().'" name=Description pattern="'.$regex["*"].'"></div>';
+ echo '<div class="caseForm donneeForm"><input type="text" '.$disabled .'value="'.$elm->getDescription().'" name=Description pattern="'.$regex["*"].'"></div>';
 echo '<div class="caseForm infoForm"><i class="fas fa-question-circle"></i></div>';
 echo '<div class="caseForm checkForm"><i class="fas fa-check-circle"></i></div>';
 
+
 echo '<label for=Videos class="caseForm labelForm">'.texte("Videos").'</label>';
-echo '<div class="caseForm donneeForm"><video src="./Videos/'.$elm->getVideos().'" </video></div>';   
+// echo '<div class="caseForm donneeForm"><video src="./Videos/'.$elm->getVideos().'" </video></div>';   
 echo '<div class="caseForm">
 				<input type="hidden" name="AncienneVideos" value="'.$elm->getVideos().'">
 				<input type="file" name="Videos" '.$disabled.'/></div>';
+				echo '<div class="caseForm infoForm"><i class="fas fa-question-circle"></i></div>';
 echo '<div class="caseForm checkForm"><i class="fas fa-check-circle"></i></div>';
-
 echo '<div class="caseForm col-span-form">
 	<div></div>
 	<div><a href="index.php?page=ListeVideos"><button type="button"><i class="fas fa-sign-out-alt fa-rotate-180"></i></button></a></div>

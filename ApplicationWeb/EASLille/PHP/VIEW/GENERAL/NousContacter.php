@@ -10,7 +10,7 @@
     <form name="contact_formu" method="post" action=""> 
 
         
-    <div>
+    <div class="esp">
         <div class="espace"></div>
         <div class="espace"></div>
         <div class="espace"></div>
@@ -19,49 +19,55 @@
             <input type="text" id="nom" name="nom" placeholder="Dupond" required
             value="<?php if (
 isset($_POST['nom'])) echo htmlspecialchars($_POST['nom']);?>"> 
+
+<div class="esp"> </div>
 <div class="espace"></div>
  <div class="espace"></div>       
-    </div>
    
-        <div>
 
             <label for="nom">Votre prénom :</label>
             <input type="text" id="prenom" name="prenom" placeholder="Martin" required
             value="<?php if (
 isset($_POST['prenom'])) echo htmlspecialchars($_POST['prenom']);?>"> 
+<div class="esp"></div>
             <div class="espace"></div>
             <div class="espace"></div>
-        </div>
-        <div>
+        
+        
             <label for="email">Votre adresse mail :</label>
             <input type="email" id="email" name="email" placeholder="monadresse@gmail.com" required
             value="<?php if (
 isset($_POST['email'])) echo htmlspecialchars($_POST['email']);?>">
+        
+<div class="esp"></div>
 <div class="espace"></div>
 <div class="espace"></div>
-        </div>
 
 
-        <div>
+        
             <label for="telephone">Téléphone :</label>
             <input type="telephone" id="telephone" name="telephone" placeholder="06/23/89/85/21" required
                    value="<?php if (
 isset($_POST['telephone'])) echo htmlspecialchars($_POST['telephone']);?>"> 
-<div class="espace"></div>
-<div class="espace"></div>
-        </div>
 
-        <div>
+<div class="esp"> </div>               
+<div class="espace"></div>
+<div class="espace"></div>
+
+
+       
             <label for="situationProfessionnelle">Situation 
                  :</label>
             <input type="situationProfessionnelle" id=" situationProfessionnelle" name="situationProfessionnelle" placeholder=" comptable" required
             value="<?php if (
 isset($_POST['situationProfessionnelle'])) echo htmlspecialchars($_POST['situationProfessionnelle']);?>"> 
-            <div class="espace"></div>
-            <div class="espace"></div>
-        </div>
 
-        <div>
+        
+<div class="esp"></div>
+            <div class="espace"></div>
+            <div class="espace"></div>
+
+       
             <label for="sujet">Sujet du message :</label>
           
             <select name="sujet" id="sujet" required
@@ -75,24 +81,29 @@ isset($_POST['sujet'])) echo htmlspecialchars($_POST['sujet']);?>">
                 <option value="autre">Autre...</option>
              
             </select>
+            <div class="esp">  </div>
             <div class="espace"></div>
             <div class="espace"></div>
-        </div>
-        <div>
+      
+    
             <label for="message">Votre message :</label>
         
             <textarea id="message" name="message" placeholder="Bonjour, je vous contacte car...." required 
             value="<?php if (
 isset($_POST['message'])) echo htmlspecialchars($_POST['message']);?>"> </textarea>
+
+<div class="esp"> </div>
             <div class="espace"></div>
             <div class="espace"></div>
             <div class="espace"></div>
-        </div>
-        <div>
+       
+       
         
             <button type="submit">Envoyer mon message</button>
+
+            <div class="esp">
             <div class="espace"></div>
-        </div>
+       
         <div class="bigEspace"></div> 
     </form>
 
@@ -136,8 +147,8 @@ problème.');
 
     
 
-   $nom = $_POST['nom']; // required
-   $prenom = $_POST['prenom']; // required
+   $nom = $_POST['nom'];  //required
+   $prenom = $_POST['prenom']; //required
    $email = $_POST['email']; // required
    $telephone = $_POST['telephone']; // required
    $situationProfessionnelle = $_POST['situationProfessionnelle']; //  required

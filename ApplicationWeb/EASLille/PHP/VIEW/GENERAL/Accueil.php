@@ -9,7 +9,7 @@
  <?php
       
  if ( $_SESSION['utilisateur']->getIdRole() <2) {
-        echo '<a class="center" href="?page=FormDons&mode=ajouter">
+        echo '<a class="center" href="?page=FormDons&mode="ajouter>
         <img src="./IMG/2.png" class="card-img-top" alt="...">
            </a>';
       }

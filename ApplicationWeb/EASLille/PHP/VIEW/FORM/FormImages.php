@@ -27,10 +27,11 @@ echo '<div class="caseForm infoForm"><i class="fas fa-question-circle"></i></div
 echo '<div class="caseForm checkForm"><i class="fas fa-check-circle"></i></div>';
 
 echo '<label for=Images class="caseForm labelForm">'.texte("Images").'</label>';
-echo '<div class="caseForm donneeForm"><img src="./IMG/'.$elm->getImages().'" /></div>';
+// echo '<div class="caseForm donneeForm"><img src="./IMG/'.$elm->getImages().'" /></div>';
 echo '<div class="caseForm">
 				<input type="hidden" name="AncienneImages" value="'.$elm->getImages().'">
 				<input type="file" name="Images" '.$disabled.'/></div>';
+				echo '<div class="caseForm infoForm"><i class="fas fa-question-circle"></i></div>';
 echo '<div class="caseForm checkForm"><i class="fas fa-check-circle"></i></div>';
 
 

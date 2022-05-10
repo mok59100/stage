@@ -50,7 +50,7 @@ function postMessage(){
     return;
 
   }
-
+$db= DbConnect::getDb();
   $auteur = $_POST['auteur'];
   $contenu = $_POST['contenu'];
 

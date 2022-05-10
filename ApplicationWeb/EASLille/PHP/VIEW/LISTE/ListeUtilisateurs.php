@@ -9,10 +9,10 @@
 
 $objets = UtilisateursManager::getList();
 //Création du template de la grid
-echo '<div class="grid-col-12 gridListe">';
+echo '<div class="grid-col-11 gridListe">';
 
-echo '<div class="caseListe titreListe grid-columns-span-12">Liste des Utilisateurs </div>';
-echo '<div class="caseListe grid-columns-span-12">
+echo '<div class="caseListe titreListe grid-columns-span-11">Liste des Utilisateurs </div>';
+echo '<div class="caseListe grid-columns-span-11">
 <div></div>
 <div class="caseListe"><a href="index.php?page=FormUtilisateurs&mode=Ajouter"><i class="fas fa-plus"></i></a></div>
 <div></div>
@@ -50,7 +50,7 @@ echo '<div class="caseListe"> <a href="index.php?page=FormUtilisateurs&mode=Modi
 echo '<div class="caseListe"> <a href="index.php?page=FormUtilisateurs&mode=Supprimer&id='.$unObjet->getIdUtilisateur().'"><i class="fas fa-trash-alt"></i></a></div>';
 }
 //Derniere ligne du tableau (bouton retour)
-echo '<div class="caseListe grid-columns-span-12">
+echo '<div class="caseListe grid-columns-span-11">
 	<div></div>
 	<a href="index.php?page=Accueil"><button><i class="fas fa-sign-out-alt fa-rotate-180"></i></button></a>
 	<div></div>

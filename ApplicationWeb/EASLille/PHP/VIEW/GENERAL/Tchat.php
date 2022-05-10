@@ -12,13 +12,7 @@
   
   <section class="chat">
     <div class="messages">
-      <div class="message">
-        <span class="date">23:22</span>
-        <span class="auteur">LIOR</span> :
-        <span class="contenu">salut ca va</span><span class="date">23:22</span>
-        
-    
-      </div>
+     
     </div>
     <div class="user-inputs">
       <form action="handler.php?task=write" method="POST">

@@ -10,8 +10,7 @@ class Utilisateurs
 	private $_Prenom;
 	private $_AdresseMail;
 	private $_MotDePasse;
-
-	private $_TelephoneUtilisateur;
+    private $_TelephoneUtilisateur;
 	private $_SituationProfessionnelle;
 	private $_Active;
 	private $_IdRole;
@@ -64,7 +63,7 @@ class Utilisateurs
 		return $this->_MotDePasse;
 	}
 
-	public function setMotDePasse(string $MotDePasse)
+	public function setMotDePasse(?string $MotDePasse)
 	{
 		$this->_MotDePasse=$MotDePasse;
 	}

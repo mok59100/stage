@@ -9,7 +9,7 @@
 
 $objets = VideosManager::getList();
 //Création du template de la grid
-echo '<div class="grid-col-5-video gridListe">';
+echo '<div class="grid-col-5 gridListe">';
 
 echo '<div class="caseListe titreListe grid-columns-span-5">Liste des Videos </div>';
 echo '<div class="caseListe grid-columns-span-5">

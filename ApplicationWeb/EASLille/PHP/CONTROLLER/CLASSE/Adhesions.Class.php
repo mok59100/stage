@@ -48,7 +48,7 @@ class Adhesions
 		return $this->_IdUtilisateur;
 	}
 
-	public function setIdUtilisateur(int $IdUtilisateur)
+	public function setIdUtilisateur(?int $IdUtilisateur)
 	{
 		$this->_IdUtilisateur=$IdUtilisateur;
 	}

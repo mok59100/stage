@@ -46,12 +46,12 @@ class Actualites
 
 	public function getDateAffichage()
 	{
-		return is_null($this->_DateAffichage)?null:$this->_DateAffichage->format('Y-n-j');
+		return is_null($this->_DateAffichage)?null:$this->_DateAffichage->format('j-n-Y');
 	}
 
 	public function setDateAffichage(?string $DateAffichage)
 	{
-		$this->_DateAffichage=is_null($DateAffichage)?null:DateTime::createFromFormat("Y-n-j",$DateAffichage);
+		$this->_DateAffichage=is_null($DateAffichage)?null:DateTime::createFromFormat("j-n-Y",$DateAffichage);
 	}
 
 	public static function getAttributes()

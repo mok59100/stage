@@ -25,22 +25,22 @@ class Adhesions
 
 	public function getDateDebutAdhesion()
 	{
-		return is_null($this->_DateDebutAdhesion)?null:$this->_DateDebutAdhesion->format('Y-n-j');
+		return is_null($this->_DateDebutAdhesion)?null:$this->_DateDebutAdhesion->format('j-n-Y');
 	}
 
 	public function setDateDebutAdhesion(?string $DateDebutAdhesion)
 	{
-		$this->_DateDebutAdhesion=is_null($DateDebutAdhesion)?null:DateTime::createFromFormat("Y-n-j",$DateDebutAdhesion);
+		$this->_DateDebutAdhesion=is_null($DateDebutAdhesion)?null:DateTime::createFromFormat("j-n-Y",$DateDebutAdhesion);
 	}
 
 	public function getDateFinAdhesion()
 	{
-		return is_null($this->_DateFinAdhesion)?null:$this->_DateFinAdhesion->format('Y-n-j');
+		return is_null($this->_DateFinAdhesion)?null:$this->_DateFinAdhesion->format('j-n-Y');
 	}
 
 	public function setDateFinAdhesion(?string $DateFinAdhesion)
 	{
-		$this->_DateFinAdhesion=is_null($DateFinAdhesion)?null:DateTime::createFromFormat("Y-n-j",$DateFinAdhesion);
+		$this->_DateFinAdhesion=is_null($DateFinAdhesion)?null:DateTime::createFromFormat("j-n-Y",$DateFinAdhesion);
 	}
 
 	public function getIdUtilisateur()

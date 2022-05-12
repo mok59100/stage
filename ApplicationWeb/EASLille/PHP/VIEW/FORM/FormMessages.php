@@ -22,11 +22,6 @@ echo '<div class="caseForm titreForm col-span-form">Formulaire Messages</div>';
 
 echo '<div class="noDisplay"><input type="hidden" value="' . $elm->getIdMessage() . '" name=IdMessage></div>';
 
-
-
-
-
-
 echo '<label for=Auteur class="caseForm labelForm">' . texte("Auteur") . '</label>';
 echo '<div class="caseForm donneeForm"><input type="text" ' . $disabled . 'value="' . $elm->getAuteur() . '" name=Auteur pattern="' . $regex["*"] . '"></div>';
 echo '<div class="caseForm infoForm"><i class="fas fa-question-circle"></i></div>';
@@ -38,7 +33,7 @@ echo '<div class="caseForm infoForm"><i class="fas fa-question-circle"></i></div
 echo '<div class="caseForm checkForm"><i class="fas fa-check-circle"></i></div>';
 
 echo '<label for=Create_at class="caseForm labelForm">' . texte("Create_at") . '</label>';
-echo '<div class="caseForm donneeForm"><input type="text" ' . $disabled . 'value="' . $elm->getCreate_at() . '" name=Create_at pattern="' . $regex["*"] . '"></div>';
+echo '<div class="caseForm donneeForm"><input type="Date" ' . $disabled . 'value="' . $elm->getCreate_at() . '" name=Create_at pattern="' . $regex["*"] . '"></div>';
 echo '<div class="caseForm infoForm"><i class="fas fa-question-circle"></i></div>';
 echo '<div class="caseForm checkForm"><i class="fas fa-check-circle"></i></div>';
 echo '<div class="caseForm col-span-form">

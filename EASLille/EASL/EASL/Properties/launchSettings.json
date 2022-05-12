@@ -2,8 +2,8 @@
   "profiles": {
     "Démarrer": {
       "commandName": "Executable",
-      "executablePath": "C:\\afpa\\EASL\\bin\\Debug\\net5.0-windows\\EASL.exe",
-      "workingDirectory": "C:\\afpa\\EASL",
+      "executablePath": "C:\\afpa\\stages\\stage\\EASLille\\EASL\\EASL\\bin\\Debug\\net5.0-windows\\EASL.exe",
+      "workingDirectory": "C:\\afpa\\stages\\stage\\EASLille\\EASL",
       "ErrorString": "Bad JSON escape sequence: \\a. Path 'profiles.Démarrer.workingDirectory', line 5, position 31."
     }
   }

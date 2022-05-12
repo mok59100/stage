@@ -1,11 +1,11 @@
 <?php
 
- echo '<main>';
+echo '<main>';
 
- echo '<div class="flex-0-1"></div>';
+echo '<div class="flex-0-1"></div>';
 
- echo '<div>';
- 
+echo '<div>';
+
 
 $objets = DonsManager::getList();
 //Création du template de la grid
@@ -29,17 +29,16 @@ echo '<div class="caseListe"></div>';
 echo '<div class="caseListe"></div>';
 
 // Affichage des ennregistrements de la base de données
-foreach($objets as $unObjet)
-{
-echo '<div class="caseListe donneeListe">'.$unObjet->getNom().'</div>';
-echo '<div class="caseListe donneeListe">'.$unObjet->getPrenom().'</div>';
-echo '<div class="caseListe donneeListe">'.$unObjet->getLibelleDon().'</div>';
-echo '<div class="caseListe donneeListe">'.$unObjet->getMontantDon().'</div>';
-echo '<div class="caseListe"> <a href="index.php?page=FormDons&mode=Afficher&id='.$unObjet->getIdDon().'"><i class="fas fa-file-contract"></i></a></div>';
-                                                    
-echo '<div class="caseListe"> <a href="index.php?page=FormDons&mode=Modifier&id='.$unObjet->getIdDon().'"><i class="fas fa-pen"></i></a></div>';
-                                                    
-echo '<div class="caseListe"> <a href="index.php?page=FormDons&mode=Supprimer&id='.$unObjet->getIdDon().'"><i class="fas fa-trash-alt"></i></a></div>';
+foreach ($objets as $unObjet) {
+	echo '<div class="caseListe donneeListe">' . $unObjet->getNom() . '</div>';
+	echo '<div class="caseListe donneeListe">' . $unObjet->getPrenom() . '</div>';
+	echo '<div class="caseListe donneeListe">' . $unObjet->getLibelleDon() . '</div>';
+	echo '<div class="caseListe donneeListe">' . $unObjet->getMontantDon() . '</div>';
+	echo '<div class="caseListe"> <a href="index.php?page=FormDons&mode=Afficher&id=' . $unObjet->getIdDon() . '"><i class="fas fa-file-contract"></i></a></div>';
+
+	echo '<div class="caseListe"> <a href="index.php?page=FormDons&mode=Modifier&id=' . $unObjet->getIdDon() . '"><i class="fas fa-pen"></i></a></div>';
+
+	echo '<div class="caseListe"> <a href="index.php?page=FormDons&mode=Supprimer&id=' . $unObjet->getIdDon() . '"><i class="fas fa-trash-alt"></i></a></div>';
 }
 //Derniere ligne du tableau (bouton retour)
 echo '<div class="caseListe grid-columns-span-7">
@@ -48,7 +47,7 @@ echo '<div class="caseListe grid-columns-span-7">
 	<div></div>
 </div>';
 
-echo'</div>'; //Grid
-echo'</div>'; //Div
+echo '</div>'; //Grid
+echo '</div>'; //Div
 echo '<div class="flex-0-1"></div>';
 echo '</main>';

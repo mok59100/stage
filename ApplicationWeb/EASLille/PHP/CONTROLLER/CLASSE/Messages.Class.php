@@ -44,12 +44,12 @@ class Messages
 
 	public function getCreate_at()
 	{
-		return $this->_Create_at;
+		return is_null($this->_Create_at)?null:$this->_Create_at->format('Y-n-j');
 	}
 
-	public function setCreate_at($Create_at)
+	public function setCreate_at(?string $Create_at)
 	{
-		$this->_Create_at = $Create_at;
+		$this->_Create_at=is_null($Create_at)?null:DateTime::createFromFormat("Y-n-j",$Create_at);
 	}
 	
 

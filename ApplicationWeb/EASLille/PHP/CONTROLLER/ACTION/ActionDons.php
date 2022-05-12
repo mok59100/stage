@@ -1,9 +1,11 @@
 <?php
+
 $elm = new Dons($_POST);
 
 switch ($_GET['mode']) {
 	case "Ajouter": {
 		$elm = DonsManager::add($elm);
+		
 		break;
 	}
 	case "Modifier": {

@@ -5,7 +5,7 @@
 	display : grid;
 	border : 1.5px solid black;
 	grid-template-columns : 2fr 2fr 2fr 0.5fr 0.5fr 0.5fr;
-	height: 50vw;
+	/* height: 50vw; */
 	background-color:white
 }
 	
@@ -18,14 +18,14 @@
 	display : grid;
 	border : 1.5px solid black;
 	grid-template-columns : 2fr 2fr 0.5fr 0.5fr 0.5fr;
-	height: 100vw;
+	/* height: 100vw; */
 	background-color:white
 }
 .grid-col-5-video{
 	display : grid;
 	border : 1.5px solid black;
 	grid-template-columns : 2fr 2fr 0.5fr 0.5fr 0.5fr;
-	height: 100vw;
+	/* height: 100vw; */
 	background-color:white;
 	
 }
@@ -39,7 +39,7 @@
 	display : grid;
 	border : 1.5px solid black;
 	grid-template-columns : 2fr 0.5fr 0.5fr 0.5fr;
-	height: 50vw;
+	/* height: 50vw; */
 	background-color:white
 }
 
@@ -51,7 +51,7 @@
 	display : grid;
 	border : 1.5px solid black;
 	grid-template-columns : 2fr 2fr 2fr 2fr 2fr 0.5fr 0.5fr 0.5fr;
-	height: 50vw;
+	/* height: 50vw; */
 	background-color:white
 }
 
@@ -63,7 +63,7 @@
 	display : grid;
 	border : 1.5px solid black;
 	grid-template-columns : 2fr 2fr 2fr 2fr 2fr 2fr 0.5fr 0.5fr 0.5fr;
-	height: 50vw;
+	/* height: 50vw; */
 	background-color:white
 }
 
@@ -74,7 +74,7 @@
 	display : grid;
 	border : 1.5px solid black;
 	grid-template-columns : 2fr 2fr 2fr 2fr 0.5fr 0.5fr 0.5fr;
-	height: 50vw;
+	/* height: 50vw; */
 	background-color:white
 }
 
@@ -85,7 +85,7 @@
 	display : grid;
 	border : 1.5px solid  black;
 	grid-template-columns : 2fr 2fr 2fr 2fr 2fr 2fr 2fr 2fr  0.5fr 0.5fr 0.5fr;
-	height: 50vw;
+	/* height: 50vw; */
 	background-color:white} 
 	.grid-columns-span-11 { 
 		grid-column:1/12;
@@ -95,7 +95,7 @@
 	display : grid;
 	border : 1.5px solid  black;
 	grid-template-columns : 2fr 2fr 2fr 2fr 2fr 2fr 2fr 2fr 2fr 0.5fr 0.5fr 0.5fr;
-	height: 50vw;
+	/* height: 50vw; */
 	background-color:white}
 
 
@@ -125,7 +125,7 @@
 	grid-gap: 1.5em;
 	height: 50vh;
 	background-color:white;
-	width:70vw;
+	width:90vw;
 	
 
 }

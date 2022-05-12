@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <title>Notre super chat !</title>
-  <link rel="stylesheet" href="css/app.css">
+<link rel="stylesheet" href="./CSS/app.css">
 </head>
 <body>
   <header>
@@ -22,6 +22,6 @@
       </form>
     </div>
 </section>
-  <script src="js/app.js"></script>
+  <script src="./JS/app.js"></script>
 </body>
 </html>

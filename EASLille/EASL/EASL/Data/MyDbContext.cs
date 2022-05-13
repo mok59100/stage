@@ -36,7 +36,7 @@ namespace EASL.Data
             if (!optionsBuilder.IsConfigured)
             {
 
-                optionsBuilder.UseMySQL("server=localhost;user=root;database=easlille;port=3308;ssl mode=none");
+                optionsBuilder.UseMySQL("server=localhost;user=root;database=easlille;port=3306;ssl mode=none");
             }
         }
 

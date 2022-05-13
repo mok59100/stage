@@ -36,7 +36,11 @@ namespace EASL.Controllers
             IEnumerable<Utilisateur> listeUtilisateurs = _service.GetAllUtilisateurs();
             return _mapper.Map<IEnumerable<UtilisateursDTOIn>>(listeUtilisateurs);
         }
-
+        public IEnumerable<Utilisateur> GetAllUtilisateursModele()
+        {
+            IEnumerable<Utilisateur> listeUtilisateurs = _service.GetAllUtilisateurs();
+            return listeUtilisateurs;
+        }
         //GET api/NomController/{i}
         [HttpGet("{id}", Name = "GetUtilisateurById")]
         public ActionResult<UtilisateursDTOIn> GetUtilisateurById(int id)

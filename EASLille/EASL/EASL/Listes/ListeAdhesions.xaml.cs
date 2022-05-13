@@ -49,7 +49,14 @@ namespace EASL.Listes
         private void btnActions_Click(object sender, RoutedEventArgs e)
         {
             // On récupère l'article selectionné
-            AdhesionsDTOIn adhesion = (AdhesionsDTOIn)DgListeAdhesions.SelectedItem;
+            AdhesionsDTOOut adh = (AdhesionsDTOOut) DgListeAdhesions.SelectedItem;
+            //AdhesionsDTOIn adhesion = (AdhesionsDTOIn)DgListeAdhesions.SelectedItem;
+            AdhesionsDTOIn adhesion = new AdhesionsDTOIn();
+            adhesion.IdAdhesion = adh.IdAdhesion;
+            adhesion.DateDebutAdhesion = adh.DateDebutAdhesion;
+            adhesion.DateFinAdhesion = adh.DateFinAdhesion;
+            adhesion.IdUtilisateur = adh.IdUtilisateur;
+
             string nom = (string)((Button)sender).Content;
             // Si pas d'article sélectionné et click sur le bouton modifier ou supprimer, on affiche un message d'erreur
             if (adhesion == null && (nom == "Modifier" || nom == "Supprimer"))

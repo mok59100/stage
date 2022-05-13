@@ -31,6 +31,7 @@ namespace EASL.Formulaires
         AdhesionsControllers AdhesionsControllers;
         string Action;
         int Id;
+        UtilisateursControllers UtilisateursControllers;
 
         // Constructeurs
         public FormulaireAdhesions(string action, ListeAdhesions window, AdhesionsDTOIn adhesion, MyDbContext _context)
@@ -41,6 +42,10 @@ namespace EASL.Formulaires
             this.Adhesion = adhesion;
             this.FenetreAppel = window;
             // on récupère l'id , null si pas id
+            UtilisateursControllers = new UtilisateursControllers(_context);
+            cbIdUtilisateur.ItemsSource = UtilisateursControllers.GetAllUtilisateursModele();
+            cbIdUtilisateur.DisplayMemberPath = "Nom";
+            cbIdUtilisateur.SelectedValuePath = "IdUtilisateur";
             this.Id = (adhesion == null) ? 0 : adhesion.IdAdhesion;
 
             // On récupère le type d'action Ajouter, Modifier, Supprimer à partir de l'information du bouton cliqué
@@ -71,8 +76,11 @@ namespace EASL.Formulaires
                     // rien à faire
                     break;
                 case "Modifier":
-                    DateTime txbDateDebutAdhesion= (DateTime)Adhesion.DateDebutAdhesion;
-                    DateTime txbDateFinAdhesion = (DateTime)Adhesion.DateFinAdhesion;
+
+                    dpDateDebutAdhesion.SelectedDate = Adhesion.DateDebutAdhesion;
+                    dpDateFinAdhesion.SelectedDate = Adhesion.DateFinAdhesion;
+                    //DateTime txbDateDebutAdhesion= (DateTime)Adhesion.DateDebutAdhesion;
+                    //DateTime txbDateFinAdhesion = (DateTime)Adhesion.DateFinAdhesion;
                     // On sélectionne par défaut la valeur de id utilisateur
                     cbIdUtilisateur.SelectedValue = Adhesion.IdUtilisateur;
 

@@ -93,7 +93,7 @@ namespace EASL.Formulaires
                 Nom = txbNom.Text,
                 Prenom = txbPrenom.Text,
                 LibelleDon = txbLibelleDon.Text,
-                MontantDon = Int32.Parse(txbMontantDon.Text),
+                MontantDon = decimal.Parse(txbMontantDon.Text),
         };
             // on appelle la méthode de la fenêtre mère (parce qu'elle contient le controller)
             this.FenetreAppel.ActionDon(don, this.Action, this.Id);

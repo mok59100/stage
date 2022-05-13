@@ -43,7 +43,7 @@
         <TextBox x:Name="txbLibelleDon" Grid.Row="7" Text="" HorizontalContentAlignment="Center" Grid.Column="3" />
 
         <Label Content="MontantDon" Grid.Row="9" HorizontalContentAlignment="Center" Grid.Column="1" FontWeight="Bold" Background="#FFFBF5F5" />
-        <TextBox x:Name="txbMontantDon" Grid.Row="9" Text="" HorizontalContentAlignment="Center" Grid.Column="3" TextChanged="txbNumber_TextChanged"/>
+        <TextBox x:Name="txbMontantDon" Grid.Row="9" Text="" HorizontalContentAlignment="Center" Grid.Column="3" />
 
         <Grid Grid.Row="11" Grid.Column="1" Grid.ColumnSpan="3">
 

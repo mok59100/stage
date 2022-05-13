@@ -39,12 +39,12 @@ namespace EASL.Data.Services
 
         public IEnumerable<Utilisateur> GetAllUtilisateurs()
         {
-            return _context.Utilisateurs.Include("Role").ToList();
+            return _context.Utilisateurs.Include("IdRoleNavigation").ToList();
         }
 
         public Utilisateur GetUtilisateurById(int id)
         {
-            return _context.Utilisateurs.Include("Role").FirstOrDefault(obj => obj.IdUtilisateur == id);
+            return _context.Utilisateurs.Include("IdRoleNavigation").FirstOrDefault(obj => obj.IdUtilisateur == id);
         }
 
         public void UpdateUtilisateur(Utilisateur obj)

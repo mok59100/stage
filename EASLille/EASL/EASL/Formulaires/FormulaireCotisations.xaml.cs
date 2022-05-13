@@ -31,7 +31,8 @@ namespace EASL.Formulaires
         ListeCotisations FenetreAppel;
         CotisationsDTOIn Cotisation;
         CotisationsControllers CotisationsControllers;
-         string Action;
+        UtilisateursControllers UtilisateursControllers;
+        string Action;
         int Id;
 
         // Constructeurs
@@ -43,6 +44,10 @@ namespace EASL.Formulaires
             this.Cotisation = cotisation;
             this.FenetreAppel = window;
             //on récupère l'id
+            UtilisateursControllers = new UtilisateursControllers(_context);
+            cbIdUtilisateur.ItemsSource = UtilisateursControllers.GetAllUtilisateursModele();
+            cbIdUtilisateur.DisplayMemberPath = "Nom";
+            cbIdUtilisateur.SelectedValuePath = "IdUtilisateur";
             this.Id = (cotisation == null) ? 0 : cotisation.IdCotisation;
             // On récupère le type d'action Ajouter, Modifier, Supprimer à partir de l'information du bouton cliqué
             this.Action = action;

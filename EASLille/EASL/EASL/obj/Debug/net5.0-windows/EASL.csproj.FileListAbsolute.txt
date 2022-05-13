@@ -138,8 +138,8 @@ C:\afpa\stages\stage\EASLille\EASL\EASL\obj\Debug\net5.0-windows\EASL.GeneratedM
 C:\afpa\stages\stage\EASLille\EASL\EASL\obj\Debug\net5.0-windows\EASL.AssemblyInfoInputs.cache
 C:\afpa\stages\stage\EASLille\EASL\EASL\obj\Debug\net5.0-windows\EASL.AssemblyInfo.cs
 C:\afpa\stages\stage\EASLille\EASL\EASL\obj\Debug\net5.0-windows\EASL.csproj.CoreCompileInputs.cache
-C:\afpa\stages\stage\EASLille\EASL\EASL\obj\Debug\net5.0-windows\EASL.csproj.CopyComplete
 C:\afpa\stages\stage\EASLille\EASL\EASL\obj\Debug\net5.0-windows\EASL.dll
 C:\afpa\stages\stage\EASLille\EASL\EASL\obj\Debug\net5.0-windows\ref\EASL.dll
 C:\afpa\stages\stage\EASLille\EASL\EASL\obj\Debug\net5.0-windows\EASL.pdb
 C:\afpa\stages\stage\EASLille\EASL\EASL\obj\Debug\net5.0-windows\EASL.genruntimeconfig.cache
+C:\afpa\stages\stage\EASLille\EASL\EASL\obj\Debug\net5.0-windows\EASL.csproj.CopyComplete

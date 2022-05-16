@@ -30,7 +30,7 @@ function getMessages(){ //function get message
   global $db;// pour dire que la function est defini a l'exterieur
 
   // 1. On requête la base de données pour sortir les 20 derniers messages
-  $resultats = $db->query("SELECT * FROM messages ORDER BY create_at DESC LIMIT 20"); //resultat = (db)la base de donnee  
+  $resultats = $db->query("SELECT * FROM messages ORDER BY Create_at DESC LIMIT 20"); //resultat = (db)la base de donnee  
   //et je fais un requete selectionne toute les donnees par descendant par contre je les limit a 20 par ordre descendant
   // 2. On traite les résultats
   $messages = $resultats->fetchAll();// fetchAll recuprere toute les lignes de donnees et me les renvoyer sous forme de tableau dans la variable message
@@ -43,19 +43,19 @@ function getMessages(){ //function get message
 function postMessage(){
   global $db;
   // 1. Analyser les paramètres passés en POST (auteur, contenu)
-  
+  var_dump($_POST);
   if(!array_key_exists('auteur', $_POST) || !array_key_exists('contenu', $_POST)){
 
     echo json_encode(["status" => "error", "message" => "One field or many have not been sent"]);
     return;
 
   }
-$db= DbConnect::getDb();
+
   $auteur = $_POST['auteur'];
   $contenu = $_POST['contenu'];
 
   // 2. Créer une requête qui permettra d'insérer ces données
-  $query = $db->prepare('INSERT INTO messages SET auteur = :auteur, contenu = :contenu, create_at = NOW()');
+  $query = $db->prepare('INSERT INTO messages SET Auteur = :auteur, Contenu = :contenu, Create_at = NOW()');
 
   $query->execute([
     "auteur" => $auteur,
@@ -65,6 +65,3 @@ $db= DbConnect::getDb();
   // 3. Donner un statut de succes ou d'erreur au format JSON
   echo json_encode(["status" => "success"]);
 }
-/**
- * Voilà c'est tout en gros.
- */

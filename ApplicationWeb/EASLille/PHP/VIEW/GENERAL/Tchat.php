@@ -2,12 +2,13 @@
 <html lang="fr">
 <head>
   <meta charset="UTF-8">
-  <title>Notre super chat !</title>
+  <title> Tchat !</title>
 <link rel="stylesheet" href="./CSS/app.css">
+
 </head>
 <body>
   <header>
-    <h1>bienvenue dans le chat !</h1>
+    <h1></h1>
   </header>
   
   <section class="chat">
@@ -15,9 +16,9 @@
      
     </div>
     <div class="user-inputs">
-      <form action="handler.php?task=write" method="POST">
-        <input type="text" name="auteur" id="auteur" placeholde="Pseudo ?">
-        <input type="text" id="contenu" name="contenu" placeholder="Veuillez taper votre message ici !">
+      <form action="Handler.php?task=write" method="POST">
+        <input type="text" name="auteur" id="auteur" placeholder=" Veuillez entrer votre pseudo ">
+        <input type="text" id="contenu" name="contenu" placeholder=" Veuillez taper votre message ici !">
         <button type="submit">🔥 envoyer !</button>
       </form>
     </div>

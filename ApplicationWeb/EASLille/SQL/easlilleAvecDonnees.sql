@@ -184,42 +184,42 @@ INSERT INTO `images` (`IdImage`, `Description`, `images`) VALUES
 
 DROP TABLE IF EXISTS `messages`;
 CREATE TABLE IF NOT EXISTS `messages` (
-  `IdMessage` int(11) NOT NULL,
-  `Dates` varchar(10) NOT NULL,
-  `Heure` varchar(30) NOT NULL,
+  `IdMessage` int(11) NOT NULL AUTO_INCREMENT,
   `Auteur` varchar(50) NOT NULL,
-  `Message` varchar(200) NOT NULL
-) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+  `Contenu` text NOT NULL,
+  `Create_at` datetime DEFAULT NULL,
+  PRIMARY KEY (`IdMessage`)
+) ENGINE=InnoDB AUTO_INCREMENT=27 DEFAULT CHARSET=utf8;
 
 --
 -- Déchargement des données de la table `messages`
 --
 
-INSERT INTO `messages` (`IdMessage`, `Dates`, `Heure`, `Auteur`, `Message`) VALUES
-(1, '01/04/2020', '22:55:53', 'SERRIERES MANIECKI Mathis', 'Bonjour à tous !'),
-(2, '01/04/2020', '22:59:27', 'SERRIERES MANIECKI Mathis', 'Vous allez bien ?'),
-(3, '01/04/2020', '22:59:44', 'Rivero Benjamin', 'Oui bonjour bonsoir'),
-(4, '01/04/2020', '22:59:52', 'SERRIERES MANIECKI Mathis', 'Incroyable'),
-(5, '01/04/2020', '23:00:16', 'Rivero Benjamin', 'C\'est beau la technologie'),
-(6, '01/04/2020', '23:00:32', 'SERRIERES MANIECKI Mathis', 'Ouais, c\'est trop bien !'),
-(7, '01/04/2020', '23:01:59', 'SERRIERES MANIECKI Mathis', 'super'),
-(8, '01/04/2020', '23:02:48', 'lorenzo bassini', ' salut la commu'),
-(9, '01/04/2020', '23:03:16', 'SERRIERES MANIECKI Mathis', 'Beaucoup d’interactions dans ce tchat !'),
-(10, '01/04/2020', '23:23:34', 'Rivero Benjamin', 'N\'hésitez pas à interagir dans le chat'),
-(11, '28/04/2020', '10:54:19', 'WALID YOUNES', 'BONJOUR'),
-(12, '28/04/2020', '10:54:22', 'WALID YOUNES', 'CECI EST UN TEST '),
-(13, '28/04/2020', '10:54:34', 'WALID YOUNES', 'CA MARCHE '),
-(14, '28/04/2020', '10:54:50', 'WALID YOUNES', 'JE TESTE ENCORE'),
-(15, '28/04/2020', '10:55:42', 'WALID YOUNES', 'IL Y A PLUS DE 10 MESSAGES AFFICHE'),
-(16, '28/04/2020', '10:57:20', 'WALID YOUNES', 'IL FAUT QUE CA FONCTIONNE SANS RAFRAICHIR LA PAGE'),
-(17, '14/12/2020', '10:26:05', 'wsh wsh', 'wsh!'),
-(18, '15/08/2021', '14:00:34', 'Zerdstone', 'test'),
-(19, '24/08/2021', '02:33:14', 'qsd', 'sqd'),
-(20, '24/08/2021', '02:33:19', 'qsd', 'fsdfsqf'),
-(21, '27/08/2021', '15:49:17', 'test', 'effectivement'),
-(22, '11/10/2021', '13:31:20', 'niklass hardbass', 'ok'),
-(23, '27/10/2021', '12:55:20', 'Samuel Douay', 'test'),
-(24, '27/10/2021', '12:55:36', 'Samuel Douay', 'rzqr');
+INSERT INTO `messages` (`IdMessage`, `Auteur`, `Contenu`, `Create_at`) VALUES
+(1, 'momo', 'ww', '2022-05-13 15:38:20'),
+(2, 'momo', '', '2022-05-13 15:38:23'),
+(3, 'momo', 'ca va ', '2022-05-13 15:38:27'),
+(4, 'eeee', '', '2022-05-13 15:46:07'),
+(5, 'eeee', 'eeee', '2022-05-13 15:46:09'),
+(6, 'eeee', '', '2022-05-13 15:46:11'),
+(7, 'moktar', 'salut', '2022-05-13 16:00:39'),
+(9, 'DD', 'DS', '2022-05-13 16:22:39'),
+(10, 'Lior', 'cxbb', '2022-05-13 16:26:08'),
+(11, '', '', '2022-05-13 17:12:50'),
+(12, '', 'ddd', '2022-05-13 17:16:18'),
+(13, '', '', '2022-05-13 17:17:46'),
+(16, 'Lior', 'super et toi', '2022-05-13 17:19:46'),
+(17, 'Lior', 'ca va cool', '2022-05-13 17:19:51'),
+(18, 'Lior', 'c\'est bientot la certification', '2022-05-13 17:20:05'),
+(19, 'Lior', 'ca sera le 02/06 ou 03/06', '2022-05-13 17:20:24'),
+(20, 'Lior', 'oui ca va aller', '2022-05-13 17:20:32'),
+(21, 'Lior', 'bien sur ', '2022-05-13 17:20:37'),
+(22, 'moktar', 'super ', '2022-05-13 17:20:54'),
+(23, 'moktar', 'ca ira ', '2022-05-13 17:20:59'),
+(24, '', '', '2022-05-13 17:28:23'),
+(25, 'moktar', 'coucou', '2022-05-16 09:24:52'),
+(26, 'mpoktar', 'salut ca va ', '2022-05-16 10:57:23');
+
 
 -- --------------------------------------------------------
 

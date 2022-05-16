@@ -109,7 +109,7 @@ namespace EASL.Formulaires {
                 return;
             }
             _contentLoaded = true;
-            System.Uri resourceLocater = new System.Uri("/EASL;component/formulaires/formulairedons.xaml", System.UriKind.Relative);
+            System.Uri resourceLocater = new System.Uri("/EASL;V1.0.0.0;component/formulaires/formulairedons.xaml", System.UriKind.Relative);
             
             #line 1 "..\..\..\..\Formulaires\FormulaireDons.xaml"
             System.Windows.Application.LoadComponent(this, resourceLocater);

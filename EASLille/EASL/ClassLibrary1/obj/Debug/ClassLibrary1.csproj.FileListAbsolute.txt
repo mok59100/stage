@@ -24,6 +24,5 @@ C:\afpa\stages\stage\EASLille\EASL\ClassLibrary1\bin\Debug\System.Diagnostics.Pe
 C:\afpa\stages\stage\EASLille\EASL\ClassLibrary1\bin\Debug\System.Security.Principal.Windows.xml
 C:\afpa\stages\stage\EASLille\EASL\ClassLibrary1\obj\Debug\ClassLibrary1.csproj.AssemblyReference.cache
 C:\afpa\stages\stage\EASLille\EASL\ClassLibrary1\obj\Debug\ClassLibrary1.csproj.CoreCompileInputs.cache
-C:\afpa\stages\stage\EASLille\EASL\ClassLibrary1\obj\Debug\ClassLibrary1.csproj.CopyComplete
 C:\afpa\stages\stage\EASLille\EASL\ClassLibrary1\obj\Debug\ClassLibrary1.dll
 C:\afpa\stages\stage\EASLille\EASL\ClassLibrary1\obj\Debug\ClassLibrary1.pdb

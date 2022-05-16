@@ -93,7 +93,7 @@ namespace EASL.Listes {
                 return;
             }
             _contentLoaded = true;
-            System.Uri resourceLocater = new System.Uri("/EASL;component/listes/listeadhesions.xaml", System.UriKind.Relative);
+            System.Uri resourceLocater = new System.Uri("/EASL;V1.0.0.0;component/listes/listeadhesions.xaml", System.UriKind.Relative);
             
             #line 1 "..\..\..\..\Listes\ListeAdhesions.xaml"
             System.Windows.Application.LoadComponent(this, resourceLocater);

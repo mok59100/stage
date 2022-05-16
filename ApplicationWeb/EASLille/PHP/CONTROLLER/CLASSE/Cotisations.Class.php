@@ -57,12 +57,12 @@ class Cotisations
 
 	public function getDateCotisation()
 	{
-		return is_null($this->_DateCotisation)?null:$this->_DateCotisation->format('j-n-Y');
+		return is_null($this->_DateCotisation)?null:$this->_DateCotisation->format('Y-n-j');
 	}
 
 	public function setDateCotisation(?string $DateCotisation)
 	{
-		$this->_DateCotisation=is_null($DateCotisation)?null:DateTime::createFromFormat("j-n-Y",$DateCotisation);
+		$this->_DateCotisation=is_null($DateCotisation)?null:DateTime::createFromFormat("Y-n-j",$DateCotisation);
 	}
 
 	public function getIdUtilisateur()

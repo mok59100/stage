@@ -12,7 +12,8 @@
       echo '<a class="center" href="?page=FormDons&mode=Ajouter">
         <img src="./IMG/2.png" class="card-img-top" alt="...">
            </a>';
-    } else {
+    } 
+    else {
 
       echo '<a class="center" href="?page=ListeDons">
       <img src="./IMG/2.png" class="card-img-top" alt="..."></a>';

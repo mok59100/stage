@@ -58,7 +58,7 @@ echo '<div class="caseForm infoForm"><i class="fas fa-question-circle"></i></div
 echo '<div class="caseForm checkForm"><i class="fas fa-check-circle"></i></div>';
 
 echo '<label for=IdRole class="caseForm labelForm">'.texte("IdRole").'</label>';
-echo '<div class="caseForm donneeForm"><input type="text" '.$disabled .'value="'.$elm->getIdRole().'" name=IdRole pattern="'.$regex["*"].'"></div>';
+echo '<div class="caseForm donneeForm">'.creerSelect(null,"roles",["LibelleRole"]).'</div>';
 echo '<div class="caseForm infoForm"><i class="fas fa-question-circle"></i></div>';
 echo '<div class="caseForm checkForm"><i class="fas fa-check-circle"></i></div>';
 

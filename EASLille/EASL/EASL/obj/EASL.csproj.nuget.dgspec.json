@@ -1,23 +1,23 @@
 {
   "format": 1,
   "restore": {
-    "C:\\afpa\\stages\\stage\\EASLille\\EASL\\EASL\\EASL.csproj": {}
+    "C:\\Users\\59011-07-10\\Documents\\stage\\EASLille\\EASL\\EASL\\EASL.csproj": {}
   },
   "projects": {
-    "C:\\afpa\\stages\\stage\\EASLille\\EASL\\EASL\\EASL.csproj": {
+    "C:\\Users\\59011-07-10\\Documents\\stage\\EASLille\\EASL\\EASL\\EASL.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\afpa\\stages\\stage\\EASLille\\EASL\\EASL\\EASL.csproj",
+        "projectUniqueName": "C:\\Users\\59011-07-10\\Documents\\stage\\EASLille\\EASL\\EASL\\EASL.csproj",
         "projectName": "EASL",
-        "projectPath": "C:\\afpa\\stages\\stage\\EASLille\\EASL\\EASL\\EASL.csproj",
-        "packagesPath": "C:\\Users\\Abu 3umayr\\.nuget\\packages\\",
-        "outputPath": "C:\\afpa\\stages\\stage\\EASLille\\EASL\\EASL\\obj\\",
+        "projectPath": "C:\\Users\\59011-07-10\\Documents\\stage\\EASLille\\EASL\\EASL\\EASL.csproj",
+        "packagesPath": "C:\\Users\\59011-07-10\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\59011-07-10\\Documents\\stage\\EASLille\\EASL\\EASL\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
         ],
         "configFilePaths": [
-          "C:\\Users\\Abu 3umayr\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\59011-07-10\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
@@ -97,7 +97,7 @@
               "privateAssets": "none"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.402\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.403\\RuntimeIdentifierGraph.json"
         }
       }
     }

@@ -68,8 +68,9 @@ input {
 
 button[type="submit"] {
   width: 50%;
-  margin-left: 30%;
-  margin-right: 30%;
+   margin-left: 30%;
+   margin-right: 30%;
+  
 
   background-color: rgb(101, 252, 146);
 }
@@ -90,4 +91,9 @@ button[type="submit"] {
 }
 .auteur{
   color:orange;
+}
+.bouttonRetour{
+  width:25%;
+  background-color:rgb(179, 88, 88);
+ 
 }

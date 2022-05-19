@@ -26,7 +26,10 @@
         <input type="text" id="contenu" name="contenu" placeholder=" Message">
         </div>
         <button type="submit">🔥 envoyer !</button>
+        <div><a href="index.php?page=Accueil"><button class="bouttonRetour" type="button"><i class="fas fa-sign-out-alt fa-rotate-180"></i></button></a></div>
       </form>
+
+	<div class="flex-0-1"></div>';
     </div>
 </section>
   <script src="./JS/app.js"></script>
